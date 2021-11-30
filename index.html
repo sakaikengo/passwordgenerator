@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <center><h1>ランダムなパスワードを生成します</h1></center>
+    <center>
+    <form name="form1">
+    <label><input type="checkbox" id="lowercaseletterflg" checked>英小文字</label>
+    <label><input type="checkbox" id="uppercaseletterflg">英大文字</label>
+    <label><input type="checkbox" id="numberflg">数字</label>
+    </form>
+    </center>
+    <center>
+    桁数：
+    <form name="form2">
+    <input type="number" id="numberofdigits" min="1" max="16">
+    </form>
+    <center><button id="generatepwd">パスワードを生成する</button></center>
+    <br>
+    <center>
+    <input id="copyTarget" type="text" readonly>
+    </center>
+    <script src="./index_pwd_generate.js"></script>
+    <button id="doCopy">コピーする</button>
+    <center>
+    <script src="./index_pwd_copy.js"></script>
+  </body>
+</html>
